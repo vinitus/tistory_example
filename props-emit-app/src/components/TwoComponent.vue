@@ -1,7 +1,7 @@
 <template>
   <div style="width:40vw; margin:5vw">
     <h1>TwoComponent</h1>
-    {{ two }}
+    {{ twoData }}
   </div>
 </template>
 
@@ -9,7 +9,8 @@
 export default {
   name: 'TwoComponent',
   props: {
-    two: String
+    // props를 통해 받은 데이터를 명시해줘야 사용할 수 있다.
+    twoData: String
   }
 }
 </script>
